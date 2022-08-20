@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import { USER_DEFINED_HTTP_SERVER_ROOT } from '../../user-env';
 import { USER_DEFINED_MIDDLEWARE_SERVER_ROOT } from '../../user-env';
+
+const HTTP_SERVER_ROOT = USER_DEFINED_HTTP_SERVER_ROOT;
 const MIDDLEWARE_SERVER_ROOT = USER_DEFINED_MIDDLEWARE_SERVER_ROOT;
 
 export default class AllStoredUrls extends Component {
@@ -17,7 +20,7 @@ export default class AllStoredUrls extends Component {
 
     getAllUrls() {
 	axios.get(
-	    `http://localhost:8081/redis?op=keys&query=*`)
+	    MIDDLEWARE_SERVER_ROOT + "redis?op=keys&query=*")
 	    .then(response => {
 		this.setState({ allKeys: response.data });
 	    })
@@ -27,7 +30,7 @@ export default class AllStoredUrls extends Component {
     }
 
     addUrlPrefix(e) {
-	return 'http://localhost:8080/a/' + e
+	return HTTP_SERVER_ROOT + "a/" + e;
     }
 
     getLongUrl(theKey) {

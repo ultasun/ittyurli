@@ -70,7 +70,7 @@ export default class App extends Component {
 		    <h1>IttyURLi</h1>
 		    <h2>A URL shortener</h2>
 		    <h3>See all posted links&nbsp;
-			<a href="http://localhost:8080/all">here</a>.
+			<a href="/all">here</a>.
 		    </h3>
 		</div>
 		<div className='appFormArea'>
