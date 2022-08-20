@@ -1,5 +1,5 @@
 # *IttyURLi*
-### A URL shortening service
+## A URL shortening service
 
 A simple *Uniform Resource Locator* shortening web application.  The home page will allow the user to transform any URL into a pseudonym short URL. There is a second page which will show the full registry of shortened URLs available.
 
@@ -16,7 +16,7 @@ The author was motiviated to design and implement [*CINDI*](https://github.com/u
 The author plans to complete the circle by implementing proper *CINDI* support for *IttyURLi*. In the mean time, enjoy this bit of history!
 
 # Installing
-### Automatic: Standalone *Docker* Image
+## Automatic: Standalone *Docker* Image
 
 The [available *Docker* image](https://hub.docker.com/r/ultasun/ittyurli) on [the hub](https://hub.docker.com) has three services running within.  ***This is the wrong way to use Docker!*** Stay tuned for a *Docker Compose Pack*.  Such a *Docker Compose Pack* might need to wait until after *IttyURLi* has proper *CINDI* support (and is no longer using *Gulp* for middleware.
 
@@ -32,11 +32,11 @@ A named volume mount `-v ittyurli-redis:/var/lib/redis` is optional, this will p
 
 **Warning: this is not a [*rootless*](https://www.google.com/search?q=why+are+rootless+docker+containers+important) Docker image!**
 
-### Manual installation
+## Manual installation
 
-Install and start a *Redis* server.
+This procedure avoids using *Docker*.  First, install and start a *Redis* server instance.
 
-Install *Gulp*:
+Next, install *Gulp*:
 
 `npm install -g gulp-cli`
 
@@ -48,7 +48,7 @@ Start the middleware:
 
 `gulp serve`
 
-Check the `user-env.js` file to make sure the two `export const` variables exist, and are set appropriate for your installation.  See `user-env.example.js` for an example. **The links will not work** if this file is not set correctly.
+Check the `user-env.js` file to make sure the two `export const` variables exist, and are set appropriate for your installation.  See [`user-env.example.js`](https://github.com/ultasun/ittyurli/blob/master/user-env.example.js) for an example. **The links will not work** if this file is not set correctly.
 
 Start the *React* front-end
 
