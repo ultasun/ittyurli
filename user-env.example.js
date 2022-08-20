@@ -1,0 +1,2 @@
+export const USER_DEFINED_HTTP_SERVER_ROOT = 'http://192.168.1.10:8080/';
+export const USER_DEFINED_MIDDLEWARE_SERVER_ROOT = 'http://192.168.1.10:8081/';

@@ -1,0 +1,63 @@
+html {
+    font-size: 100%;
+    font-family: Sans-serif;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+
+body {
+/*    overflow-x: hidden;*/
+    font-weight: normal;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-style: italic;
+}
+
+a {
+    color: skyblue;
+}
+
+ul, li {
+    list-style-type: none;
+    margin-left:-25px;
+}
+
+.app {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.appResultArea {
+    color: red;
+}
+
+.longUrlSubmission {
+    display: flex;
+    flex-direction: column;
+}
+
+.shortenButton {
+    margin: 10px;
+    padding: 10px;
+}
+
+.originalUrlField {
+    margin: 10px;
+    padding: 10px;
+}
+
+.urlListElement {
+    margin: 10px;
+    padding-top: 30px;
+    list-style-type: none;
+}
+
+.yellowLi {
+    color: yellow;
+}
