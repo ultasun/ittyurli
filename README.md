@@ -22,7 +22,7 @@ The [available *Docker* image](https://hub.docker.com/r/ultasun/ittyurli) on [th
 
 Since the image has three services inside, and because there are mandatory environment variables, starting the container is a longer command:
 
-`docker run -d -p 8080:8080 -p 8081:8081 -e ITTYURLI_HTTP_SERVER_PREFIX="http://localhost" -e ITTYURLI_HTTP_SERVER_PORTNO=8080 -t ittyurli`
+`docker run -d -p 8080:8080 -p 8081:8081 -e ITTYURLI_HTTP_SERVER_PREFIX="http://localhost" -e ITTYURLI_HTTP_SERVER_PORTNO=8080 -t ultasun/ittyurli`
 
 Be **sure** to update the value of the environment variable `ITTYURLI_HTTP_SERVER_PREFIX` or else the generated links will not work.  Make this the public-most DNS or IP address, but it must include the `http://` URI prefix.  See the generated `user-env.js`, after starting the container.
 
