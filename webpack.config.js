@@ -25,6 +25,7 @@ module.exports = {
 	moduleExtensions: ["-loader"],
     },
     devServer: {
+	disableHostCheck: true,
 	host: '0.0.0.0',
 	port: process.env.ITTYURLI_HTTP_SERVER_PORTNO,
 	historyApiFallback: true,
