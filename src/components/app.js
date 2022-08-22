@@ -104,10 +104,10 @@ export default class App extends Component {
 			</div>
 		    ) : ( null ) }
 		</div>
-		<p>View the &nbsp;
+		<p>View the&nbsp;
 		    <a href="https://github.com/ultasun/ittyurli">
 			source
-		    </a>, or &nbsp;
+		    </a>, or&nbsp;
 		    <a href="https://hub.docker.com/r/ultasun/ittyurli">
 			get this Docker image!
 		    </a>
