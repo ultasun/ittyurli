@@ -1,10 +1,7 @@
 # *IttyURLi*
-## A URL shortening service
-
 A simple *Uniform Resource Locator* shortening web application.  The home page will allow the user to transform any URL into a pseudonym short URL. There is a second page which will show the full registry of shortened URLs available.
 
 # Architecture
-
 The author was motiviated to design and implement [*CINDI*](https://github.com/ultasun/cindi) during the creation of this web application.
 
 - The front end is a [React](https://reactjs.org/) application.
@@ -17,7 +14,6 @@ The author plans to complete the circle by implementing proper *CINDI* support f
 
 # Installing
 ## Automatic: Standalone *Docker* Image
-
 The [available *Docker* image](https://hub.docker.com/r/ultasun/ittyurli) on [the hub](https://hub.docker.com) has three services running within.  ***This is the wrong way to use Docker!*** Stay tuned for a *Docker Compose Pack*.  Such a *Docker Compose Pack* might need to wait until after *IttyURLi* has proper *CINDI* support (and is no longer using *Gulp* for middleware.
 
 Since the image has three services inside, and because there are mandatory environment variables, starting the container is a longer command:
@@ -33,7 +29,6 @@ A named volume mount `-v ittyurli-redis:/var/lib/redis` is optional, this will p
 **Warning: this is not a [*rootless*](https://www.google.com/search?q=why+are+rootless+docker+containers+important) Docker image!**
 
 ## Manual installation
-
 This procedure avoids using *Docker*.  First, install and start a *Redis* server instance.
 
 Next, install *Gulp*:
@@ -55,12 +50,9 @@ Start the *React* front-end
 `npm start`.
 
 # Credits / Support
-
 This is pre-alpha quality software.  See the `LICENSE`.  This software was written by a lone author, [*ultasun*](https://github.com/ultasun), and may be reached via a direct message on [Libera.Chat](https://libera.chat/).
 
 Please do not open issues concerning *Gulp* because any future work put into *IttyURLi* will see that it will transition to utilizing *CINDI* for middleware.
 
 Thanks for reading!
-
-
 
