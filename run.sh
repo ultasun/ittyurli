@@ -1,4 +1,6 @@
 #!/bin/sh
+# This script is intended to be launched from within a Docker container
+
 echo "..."
 cat LICENSE
 echo "..."
